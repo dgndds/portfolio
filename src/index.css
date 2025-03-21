@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'ShareTechMono';
+    src: local('ShareTechMono'), url(./assets/fonts/ShareTechMono-Regular.ttf) format('truetype');
+}
+
+@theme {
+    --color-primary-light : #989da8;
+    --color-primary : #727272;
+
+    --color-background: #1f1f1f;
+    --color-background-dark: #181818;
+
+    --color-primary-border: #404040;
+    --color-primary-border-dark: #303030;
+
+    --color-token: #4EC9B0;
+    --color-token-dark: #108861;
+
+    --color-property-light:#9cdcfe;
+    --color-property: #24a6d6;
+    --color-property-dark: #0078d4;
+
+    --color-class-light:#e1df11;
+    --color-class: #c27852;
+    --color-class-dark: #c3602d;
+
+    --font-tech-mono:"ShareTechMono" 
+}
+  
+body {
+    background-color: #1f1f1f;
+}
+

@@ -1,0 +1,27 @@
+#1f1f1f
+#989da8
+#181818
+#727272
+
+
+#000000
+#ffffff
+
+#4EC9B0
+#108861
+
+#9cdcfe
+#24a6d6
+#0078d4
+
+#e1df11
+#c27852
+#c3602d
+
+--- Possible fonts ---
+monospace
+fantasy
+
+--- Used fonts ---
+Consolas
+ShareTechMono
