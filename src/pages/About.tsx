@@ -2,7 +2,7 @@ import Terminal from "../components/Fragments/Terminal";
 
 const About = () => {
   return (
-    <div className="mt-22 grid grid-cols-3 gird-rows-4 text-white gap-4 h-[calc(100vh-158px)] px-4">
+    <div className="grid grid-cols-3 gird-rows-4 text-white gap-4 h-[calc(100vh-123px)] px-4">
       <Terminal title="Experience" className="col-span-2"/>
 
       <div className="row-span-2 grid grid-rows-3 gap-4">
