@@ -3,7 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { ChevronRight } from "@mui/icons-material";
-import ListLink from "./Link";
+import ListLink from "../Link";
 
 function Header() {
   return (

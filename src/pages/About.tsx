@@ -1,4 +1,4 @@
-import Terminal from "../components/Fragments/terminal/Terminal";
+import Terminal from "../components/Fragments/Terminal";
 
 const About = () => {
   return (
