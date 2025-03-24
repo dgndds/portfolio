@@ -1,6 +1,6 @@
 const ConsoleDemo = () => {
   return (
-    <div className="bg-background-dark p-2 flex flex-col gap-2 font-tech-mono border-primary-border-dark border">
+    <div className="bg-background-dark p-2 flex flex-col gap-2 font-tech-mono border-primary-border-dark border flex-1">
       <div className="flex gap-2">
         <span className="text-primary font-thin">12:42:45 PM</span>
         <span className="text-property">{"[vite]"}</span>
