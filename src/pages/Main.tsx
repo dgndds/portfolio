@@ -4,7 +4,7 @@ import Clock from "../components/Fragments/cards/Clock";
 
 const Main = () => {
   return (
-    <div className="flex flex-col gap-2 mt-16 h-full p-4 overflow-hidden">
+    <div className="flex flex-col gap-2 h-full px-4 overflow-hidden">
       <div className="flex gap-2">
         <ConsoleDemo />
 
