@@ -5,18 +5,18 @@ import "@fontsource/roboto/700.css";
 
 import MainLayout from "./layouts/MainLayout";
 import Main from "./pages/Main";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { Routes, Route, HashRouter } from "react-router";
 import About from "./pages/About";
 
 function App() {
   return (
     <MainLayout>
-      <BrowserRouter basename="/portfolio">
+      <HashRouter basename="/portfolio">
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </MainLayout>
   );
 }
