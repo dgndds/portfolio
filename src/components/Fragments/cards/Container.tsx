@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="bg-background-dark p-2 flex flex-col gap-2 font-tech-mono border-primary-border-dark border flex-1">
+    <div className="bg-background-dark px-4 py-2 flex flex-col gap-2 font-tech-mono border-primary-border-dark border flex-1">
       {children}
     </div>
   );

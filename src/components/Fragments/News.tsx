@@ -4,14 +4,16 @@ import NewsEntry from "./cards/NewsEntry";
 const News = () => {
   return (
     <Container>
-      <div className="text-primary text-lg flex items-center">
+      {/* <div className="text-white text-lg flex items-center bg-primary-border-dark px-2">
+       */}
+      <div className="flex items-center text-white border-b border-primary-border py-2">
         <div className="flex-1 font-tech-mono text-2xl">News</div>
-        <div className="text-sm text-secondary underline underline-offset-8">
+        <div className="text-sm text-secondary underline underline-offset-4">
           View all
         </div>
       </div>
 
-      <div className="flex gap-2 flex-col">
+      <div className="flex gap-2 flex-col pt-2">
         <NewsEntry
           date="24/03/2025 MON"
           type="mdy"
