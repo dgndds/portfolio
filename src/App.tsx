@@ -11,7 +11,7 @@ import About from "./pages/About";
 function App() {
   return (
     <MainLayout>
-      <BrowserRouter basename={process.env.REACT_APP_FOR_PATH }>
+      <BrowserRouter basename={process.env.REACT_APP_GH_BASE_URL }>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
