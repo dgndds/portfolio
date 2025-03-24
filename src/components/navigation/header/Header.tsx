@@ -32,6 +32,7 @@ function Header() {
         <div className="flex gap-8">
           <ListLink path="/" title="Home" />
           <ListLink path="/about" title="About" />
+          <ListLink path="/news" title="News" />
         </div>
       </Container>
     </AppBar>
