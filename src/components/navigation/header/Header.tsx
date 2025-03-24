@@ -15,7 +15,7 @@ function Header() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/portfolio/#"
             sx={{
               mr: 2,
               fontFamily: "monospace",

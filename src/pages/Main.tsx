@@ -10,7 +10,7 @@ const Main = () => {
         <ConsoleDemo />
 
         <div className="w-48 flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl">
-          #31
+          #32
         </div>
       </div>
 
