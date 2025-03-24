@@ -10,14 +10,14 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <MainLayout>
-      <HashRouter>
+    <HashRouter>
+      <MainLayout>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </HashRouter>
-    </MainLayout>
+      </MainLayout>
+    </HashRouter>
   );
 }
 
