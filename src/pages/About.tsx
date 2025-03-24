@@ -1,3 +1,4 @@
+import SkillsBarTerminalContent from "../components/Fragments/SkillsBarTerminalContent";
 import Terminal from "../components/Fragments/Terminal";
 
 const About = () => {
@@ -13,7 +14,9 @@ const About = () => {
 
       <Terminal className="row-span-2" title="Education"/>
 
-      <Terminal title="Skills"/>
+      <Terminal title="Skills">
+        <SkillsBarTerminalContent/>
+      </Terminal>
 
       <Terminal title="Certificates" className="col-span-2"/>
     </div>
