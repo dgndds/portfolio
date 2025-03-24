@@ -30,6 +30,15 @@ const News = () => {
           description="Check out the new About Me page to learn more about me and my work."
           count={2}
         />
+
+        <NewsEntry
+          date="24/03/2025 MON"
+          type="mdy"
+          subtype="update"
+          title="New Skills Terminal Added"
+          description="Explore the new Skills Terminal on the About Me page to see my latest skills and expertise."
+          count={3}
+        />
       </div>
     </Container>
   );
