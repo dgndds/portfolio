@@ -1,0 +1,86 @@
+import Terminal from "../Fragments/Terminal";
+import profile from "../../assets/images/profile.jpg";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { LinkedIn, Twitter } from "@mui/icons-material";
+
+const GeneralInfo = () => {
+  return (
+    <>
+      <div className="h-[350px] flex gap-4">
+        <div className=" text-white w-[260px]">
+          <Terminal title={"pic.png"}>
+            <img src={profile} className="object-cover h-[295px]" />
+          </Terminal>
+        </div>
+        <div className="flex flex-col gap-4 flex-1">
+          <div className=" text-white flex gap-4 flex-1">
+            <div className="flex-1 ">
+              <Terminal title={"about_me.exe"}>
+                {">"} Hello! I'm a passionate developer with a love for creating
+                intuitive and efficient web applications. I enjoy solving
+                complex problems and learning new technologies to improve my
+                craft. When I'm not coding, you can find me exploring new
+                hobbies or spending time with family and friends.
+              </Terminal>
+            </div>
+            <div className="w-[350px]">
+              <Terminal title={"contact.pdf"}>
+                <div className="flex flex-col gap-4 items-center justify-center h-[175px]">
+                  <span className="flex gap-4 items-center">
+                    <GitHubIcon />
+                    <a
+                      href="https://github.com/yourusername"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      github.com/yourusername
+                    </a>
+                  </span>
+                  <span className="flex gap-4 items-center">
+                    <LinkedIn />
+                    <a
+                      href="https://linkedin.com/yourusername"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      linkedin.com/yourusername
+                    </a>
+                  </span>
+                  <span className="flex gap-4 items-center">
+                    <Twitter />
+                    <a
+                      href="https://x.com/yourusername"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-4"
+                    >
+                      x.com/yourusername
+                    </a>
+                  </span>
+                </div>
+              </Terminal>
+            </div>
+          </div>
+          <div className=" text-white flex gap-4 h-[100px]">
+            <div className=" text-white w-14 flex-1 h-full">
+              <Terminal title={"Title"}></Terminal>
+            </div>
+            <div className=" text-white w-14 flex-1 h-full">
+              <Terminal title={"Title"}></Terminal>
+            </div>
+            <div className=" text-white w-14 flex-1 h-full">
+              <Terminal title={"Title"}></Terminal>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex-1">
+        <Terminal title={""}></Terminal>
+      </div>
+    </>
+  );
+};
+
+export default GeneralInfo;

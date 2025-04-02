@@ -40,7 +40,7 @@ const Terminal = ({
           )}
         >
           <div className="h-9 bg-primary-border-dark flex items-center justify-between px-2 font-tech-mono font-bold text-[#efefef] text-[12px]">
-            {title}
+            <div className="flex-1">{title}</div>
 
             <div className="flex gap-2">
               <button onClick={closeTerminal} className="hover:cursor-pointer">
