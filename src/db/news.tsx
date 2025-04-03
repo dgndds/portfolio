@@ -53,7 +53,7 @@ const NEWS_ARTICLES = [
   },
   {
     id: 6,
-    title: "New Terminal Buttons and Dialog Functionality",
+    title: "New Terminal Buttons",
     content:
       "The Skills Terminal now includes new buttons and dialog functionality for an enhanced user experience.",
     date: "26/03/2025 WED",
@@ -62,7 +62,7 @@ const NEWS_ARTICLES = [
     },
     {
     id: 7,
-    title: "New Education and Projects Added",
+    title: "Education & Projects Added",
     content:
       "The About Me section has been updated with newly added education details and projects in the Experience tab.",
     date: "26/03/2025 WED",
