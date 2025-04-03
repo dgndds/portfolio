@@ -51,6 +51,24 @@ const NEWS_ARTICLES = [
     type: "mdy",
     subtype: "update",
   },
+  {
+    id: 6,
+    title: "New Terminal Buttons and Dialog Functionality",
+    content:
+      "The Skills Terminal now includes new buttons and dialog functionality for an enhanced user experience.",
+    date: "26/03/2025 WED",
+    type: "mdy",
+    subtype: "update",
+    },
+    {
+    id: 7,
+    title: "New Education and Projects Added",
+    content:
+      "The About Me section has been updated with newly added education details and projects in the Experience tab.",
+    date: "26/03/2025 WED",
+    type: "mdy",
+    subtype: "update",
+    },
 ];
 
 export { NEWS_ARTICLES };
