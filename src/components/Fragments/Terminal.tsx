@@ -55,7 +55,7 @@ const Terminal = ({
             </div>
           </div>
 
-          <div className="text-[#ffffffc2] p-2 font-tech-mono ">
+          <div className="text-[#ffffffc2] p-2 font-tech-mono overflow-y-auto h-[calc(100%-36px)] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818]">
             {children ? (
               children
             ) : (
