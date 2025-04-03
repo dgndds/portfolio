@@ -43,6 +43,14 @@ const NEWS_ARTICLES = [
     type: "mdy",
     subtype: "news",
   },
+  {
+    id: 5,
+    title: "Updated About Me Section",
+    content: "The About Me section has been updated with new information and design improvements.",
+    date: "25/03/2025 TUE",
+    type: "mdy",
+    subtype: "update",
+  },
 ];
 
 export { NEWS_ARTICLES };
