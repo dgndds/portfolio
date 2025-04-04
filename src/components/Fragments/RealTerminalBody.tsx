@@ -93,7 +93,13 @@ const RealTerminalBody = ({ commands }: RealTerminalBodyProps) => {
         }
       }
 
-      return <span className="text-red-500">Command not found</span>;
+      return (
+        <span className="text-red-500">
+          {" "}
+          Error: Command "{givenCommand}" not recognized. Please try again or
+          type "help" for assistance.
+        </span>
+      );
     }
   }
 
