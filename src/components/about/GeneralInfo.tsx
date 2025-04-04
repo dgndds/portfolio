@@ -2,6 +2,7 @@ import Terminal from "../Fragments/Terminal";
 import profile from "../../assets/images/profile.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { LinkedIn, Twitter } from "@mui/icons-material";
+import GeneralAboutMeTerminalContent from "../Fragments/GeneralAboutMeTerminalContent";
 
 const GeneralInfo = () => {
   return (
@@ -16,11 +17,7 @@ const GeneralInfo = () => {
           <div className=" text-white flex gap-4 flex-1">
             <div className="flex-1 ">
               <Terminal title={"about_me.exe"}>
-                {">"} Hello! I'm a passionate developer with a love for creating
-                intuitive and efficient web applications. I enjoy solving
-                complex problems and learning new technologies to improve my
-                craft. When I'm not coding, you can find me exploring new
-                hobbies or spending time with family and friends.
+                <GeneralAboutMeTerminalContent />
               </Terminal>
             </div>
             <div className="w-[350px]">
