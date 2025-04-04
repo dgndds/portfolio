@@ -18,7 +18,7 @@ const SkillsBarTerminalContent = ({
   return (
     <div className="flex flex-col gap-2">
       {!headlessMode && <h2>{">"} list skills</h2>}
-      <ul className="flex gap-5 flex-col mb-4">
+      <ul className={`flex gap-5 flex-col ${!headlessMode && "mb-4"}`}>
         {skills.map((skill, index) => (
           <li key={index} className="flex gap-2">
             <strong className="min-w-[18%]">{skill.name}</strong>:

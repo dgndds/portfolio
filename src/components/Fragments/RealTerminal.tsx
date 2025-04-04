@@ -111,6 +111,8 @@ const RealTerminal = ({
         onClose={handleClose}
         title={title}
         content={<RealTerminalBody commands={commands} />}
+        real
+        commands={commands}
       />
     </>
   );

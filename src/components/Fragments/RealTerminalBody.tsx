@@ -103,7 +103,7 @@ const RealTerminalBody = ({ commands }: RealTerminalBodyProps) => {
         <div className="overflow-y-auto max-h-[100%] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818] pr-4">
           <ul className="text-[#ffffffc2] font-tech-mono">
             {commandHistory.map((cmd, index) => (
-              <li key={index} className="before:content-['>_'] mt-2">
+              <li key={index} className="before:content-['>_'] mt-10">
                 <span className="text-token-neon">{cmd}</span>
 
                 <div className="mt-2">{getCommandResult(cmd)}</div>
