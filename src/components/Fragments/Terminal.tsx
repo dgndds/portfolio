@@ -21,10 +21,10 @@ const Terminal = ({
   title,
   children,
   closed = false,
-  onClose, // Destructure onClose
-}: TerminalProps) => {
+  onClose,
+}: //TODO: Add commands as JSON Object, also a second mode, research if npm package is possible
+TerminalProps) => {
   const [terminalClosed, setTerminalClosed] = useState(closed);
-
   const [isDialogOpen, setDialogOpen] = useState(false);
 
   const handleOpen = () => setDialogOpen(true);
@@ -63,7 +63,11 @@ const Terminal = ({
                 <HorizontalRuleIcon sx={{ fontSize: 15 }} />
               </button>
 
-              <CropSquareIcon onClick={handleOpen} sx={{ fontSize: 15 }} />
+              <CropSquareIcon
+                onClick={handleOpen}
+                sx={{ fontSize: 15 }}
+                className="hover:cursor-pointer"
+              />
 
               <button onClick={onCloseClicked} className="hover:cursor-pointer">
                 <CloseIcon sx={{ fontSize: 15 }} />

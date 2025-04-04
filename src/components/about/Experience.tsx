@@ -1,4 +1,6 @@
 import EducationTerminalContent from "../Fragments/EducationTerminalContent";
+import ExperienceAboutMeTerminalContent from "../Fragments/ExperienceAboutMeTerminalContent";
+import ExperienceBadgeSkillsTerminalContent from "../Fragments/ExperienceBadgeSkillsTerminalContent";
 import ExperienceTerminalContent from "../Fragments/ExperienceTerminalContent";
 import ProjectsTerminalContent from "../Fragments/ProjectsTerminalContent";
 import SkillsBarTerminalContent from "../Fragments/SkillsBarTerminalContent";
@@ -12,9 +14,13 @@ const Experience = () => {
       </Terminal>
 
       <div className="row-span-2 grid grid-rows-3 gap-4">
-        <Terminal title="About Me" />
-        <Terminal title="Skills" />
-        <Terminal title="Skills" />
+        <Terminal title="About Me">
+          <ExperienceAboutMeTerminalContent />
+        </Terminal>
+
+        <Terminal title="Skills" className="row-span-2">
+          <ExperienceBadgeSkillsTerminalContent />
+        </Terminal>
       </div>
 
       <Terminal className="row-span-2" title="Experience">
