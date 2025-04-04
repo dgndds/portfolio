@@ -46,7 +46,8 @@ const NEWS_ARTICLES = [
   {
     id: 5,
     title: "Updated About Me Section",
-    content: "The About Me section has been updated with new information and design improvements.",
+    content:
+      "The About Me section has been updated with new information and design improvements.",
     date: "25/03/2025 TUE",
     type: "mdy",
     subtype: "update",
@@ -59,8 +60,8 @@ const NEWS_ARTICLES = [
     date: "26/03/2025 WED",
     type: "mdy",
     subtype: "update",
-    },
-    {
+  },
+  {
     id: 7,
     title: "Education & Projects Added",
     content:
@@ -68,16 +69,25 @@ const NEWS_ARTICLES = [
     date: "26/03/2025 WED",
     type: "mdy",
     subtype: "update",
-    },
-    {
-      id: 8,
-      title: "New Skills Section Created",
-      content:
-        "A new Skills section has been added to the About Me page, showcasing my expertise and proficiencies.",
-      date: "27/03/2025 THU",
-      type: "mdy",
-      subtype: "news",
-    },
+  },
+  {
+    id: 8,
+    title: "New Skills Section Created",
+    content:
+      "A new Skills section has been added to the About Me page, showcasing my expertise and proficiencies.",
+    date: "27/03/2025 THU",
+    type: "mdy",
+    subtype: "news",
+  },
+  {
+    id: 9,
+    title: "New Working Terminal Added",
+    content:
+      "Experience the new Working Terminal feature, designed to enhance productivity and streamline workflows.",
+    date: "28/03/2025 FRI",
+    type: "mdy",
+    subtype: "news",
+  },
 ];
 
 export { NEWS_ARTICLES };
