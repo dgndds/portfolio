@@ -69,6 +69,15 @@ const NEWS_ARTICLES = [
     type: "mdy",
     subtype: "update",
     },
+    {
+      id: 8,
+      title: "New Skills Section Created",
+      content:
+        "A new Skills section has been added to the About Me page, showcasing my expertise and proficiencies.",
+      date: "27/03/2025 THU",
+      type: "mdy",
+      subtype: "news",
+    },
 ];
 
 export { NEWS_ARTICLES };
