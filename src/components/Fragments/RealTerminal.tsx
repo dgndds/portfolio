@@ -130,7 +130,7 @@ const RealTerminal = ({
 
             if (matchedValue) {
               return typeof matchedValue.content === "string" ? (
-                <span className="text-green-500">{matchedValue.content}</span>
+                <span>{matchedValue.content}</span>
               ) : (
                 matchedValue.content
               );
@@ -187,7 +187,7 @@ const RealTerminal = ({
                     <li key={index} className="before:content-['>_'] mt-2">
                       <span className="text-token-neon">{cmd}</span>
 
-                      <div>{getCommandResult(cmd)}</div>
+                      <div className="mt-2">{getCommandResult(cmd)}</div>
                     </li>
                   ))}
                   <div ref={terminalEndRef} />
