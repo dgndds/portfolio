@@ -12,7 +12,7 @@ const ContactInfoTerminalContent = ({
     <>
       {!headlessMode && <h2>{">"} list contacts</h2>}{" "}
       <div
-        className={`flex flex-col gap-4 justify-center mt-4 ${
+        className={`flex flex-col gap-4 justify-center ${
           !headlessMode ? "items-center h-[175px]" : ""
         }`}
       >

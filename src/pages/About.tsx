@@ -5,6 +5,7 @@ import { useState } from "react";
 import GeneralInfo from "../components/about/GeneralInfo";
 import Experience from "../components/about/Experience";
 import ExtraInfo from "../components/about/ExtraInfo";
+import TerminalTab from "../components/about/TerminalTab";
 
 const About = () => {
   const [value, setValue] = useState(0);
@@ -50,6 +51,7 @@ const About = () => {
         <Tab label="General"/>
         <Tab label="Experience" />
         <Tab label="Extra" />
+        <Tab label="Terminal" />
       </Tabs>
       <Box>
         {value === 0 && (
@@ -65,6 +67,11 @@ const About = () => {
         {value === 2 && (
           <div className="bg-background-dark !h-[calc(100vh-156px)] w-full rounded-b rounded-r-2xl p-4 !m-0 ">
             <ExtraInfo />
+          </div>
+        )}
+        {value === 3 && (
+          <div className="bg-background-dark !h-[calc(100vh-156px)] w-full rounded-b rounded-r-2xl p-4 !m-0 ">
+            <TerminalTab />
           </div>
         )}
       </Box>
