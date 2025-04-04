@@ -27,7 +27,7 @@ const Main = () => {
         <ConsoleDemo />
 
         <div className="w-48 flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl">
-          #55
+          #57
         </div>
       </div>
     </div>
