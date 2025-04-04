@@ -3,7 +3,7 @@ import CropSquareIcon from "@mui/icons-material/CropSquare";
 import CloseIcon from "@mui/icons-material/Close";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import AddToQueueIcon from "@mui/icons-material/AddToQueue";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import TerminalDialog from "../dialogs/TerminalDialog";
 import React from "react";
 
@@ -11,9 +11,9 @@ interface Command {
   command: string;
   commandValues?: {
     value: string;
-    content: string;
+    content: string | React.ReactNode; // Updated to accept React.ReactNode
   }[];
-  content?: string | React.ReactNode;
+  content?: string | React.ReactNode; // Updated to accept React.ReactNode
   examples: {
     usage: string;
     description: string;
@@ -41,6 +41,15 @@ const RealTerminal = ({
   const [terminalClosed, setTerminalClosed] = useState(closed);
   const [isDialogOpen, setDialogOpen] = useState(false);
   const [commandHistory, setCommandHistory] = useState<string[]>([]);
+  const terminalEndRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToBottom = () => {
+    terminalEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [commandHistory]);
 
   const handleOpen = () => setDialogOpen(true);
   const handleClose = () => setDialogOpen(false);
@@ -66,7 +75,11 @@ const RealTerminal = ({
 
     if (matchedCommand) {
       if (matchedCommand.content) {
-        return matchedCommand.content;
+        return typeof matchedCommand.content === "string" ? (
+          <span>{matchedCommand.content}</span>
+        ) : (
+          matchedCommand.content
+        );
       } else {
         return (
           <div>
@@ -116,8 +129,10 @@ const RealTerminal = ({
             );
 
             if (matchedValue) {
-              return (
+              return typeof matchedValue.content === "string" ? (
                 <span className="text-green-500">{matchedValue.content}</span>
+              ) : (
+                matchedValue.content
               );
             } else {
               return (
@@ -144,7 +159,7 @@ const RealTerminal = ({
             className
           )}
         >
-          <div className="h-9 bg-primary-border-dark flex items-center justify-between px-2 font-tech-mono font-bold text-[#efefef] text-[12px]">
+          <div className="h-9 bg-primary-border-dark flex items-center justify-between font-tech-mono font-bold text-[#efefef] text-[12px]">
             <div className="flex-1">{title}</div>
 
             <div className="flex gap-2">
@@ -166,7 +181,7 @@ const RealTerminal = ({
 
           <div className="text-[#ffffffc2] p-2 font-tech-mono overflow-y-auto h-[calc(100%-36px)] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818]">
             <div className="flex flex-col justify-end h-full gap-4">
-              <div className="overflow-y-auto max-h-[100%] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818]">
+              <div className="overflow-y-auto max-h-[100%] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818] pr-4">
                 <ul className="text-[#ffffffc2] font-tech-mono">
                   {commandHistory.map((cmd, index) => (
                     <li key={index} className="before:content-['>_'] mt-2">
@@ -175,6 +190,7 @@ const RealTerminal = ({
                       <div>{getCommandResult(cmd)}</div>
                     </li>
                   ))}
+                  <div ref={terminalEndRef} />
                 </ul>
               </div>
 
@@ -192,6 +208,7 @@ const RealTerminal = ({
                     }
 
                     e.currentTarget.value = "";
+                    scrollToBottom();
                   } else if (e.key === "ArrowUp") {
                     if (commandHistory.length > 0) {
                       e.currentTarget.value =
