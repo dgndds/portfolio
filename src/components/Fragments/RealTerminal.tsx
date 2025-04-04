@@ -166,8 +166,8 @@ const RealTerminal = ({
 
           <div className="text-[#ffffffc2] p-2 font-tech-mono overflow-y-auto h-[calc(100%-36px)] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818]">
             <div className="flex flex-col justify-end h-full gap-4">
-              <div>
-                <ul className="text-[#ffffffc2] font-tech-mono overflow-y-auto h-full">
+              <div className="overflow-y-auto max-h-[100%] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818]">
+                <ul className="text-[#ffffffc2] font-tech-mono">
                   {commandHistory.map((cmd, index) => (
                     <li key={index} className="before:content-['>_'] mt-2">
                       <span className="text-token-neon">{cmd}</span>
