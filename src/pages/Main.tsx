@@ -7,14 +7,6 @@ import AsciiArt from "../components/Fragments/cards/AsciiArt";
 const Main = () => {
   return (
     <div className="flex flex-col gap-2 h-full px-4 overflow-hidden">
-      <div className="flex gap-2">
-        <ConsoleDemo />
-
-        <div className="w-48 flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl">
-          #44
-        </div>
-      </div>
-
       <div className="flex gap-2 align-stretch">
         <div className="w-[250px]">
           <AsciiArt />
@@ -29,6 +21,14 @@ const Main = () => {
 
       <div>
         <News />
+      </div>
+
+      <div className="flex gap-2">
+        <ConsoleDemo />
+
+        <div className="w-48 flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl">
+          #44
+        </div>
       </div>
     </div>
   );
