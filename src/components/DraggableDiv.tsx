@@ -6,7 +6,21 @@ const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
   const divRef = useRef<HTMLDivElement | null>(null);
   const pos = useRef({ pos1: 0, pos2: 0, pos3: 0, pos4: 0 });
 
+  const isDraggable = (element: HTMLElement | null): boolean => {
+    while (element) {
+      if (element.getAttribute("data-draggable") === "true") {
+        return true;
+      }
+      element = element.parentElement;
+    }
+    return false;
+  };
+
   const handleMouseDown = (e: React.MouseEvent) => {
+    if (!isDraggable(e.target as HTMLElement)) {
+      return;
+    }
+
     e.preventDefault();
     pos.current.pos3 = e.clientX;
     pos.current.pos4 = e.clientY;
@@ -51,7 +65,7 @@ const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
   return (
     <div
       ref={divRef}
-      className="border border-white absolute z-10"
+      className="absolute z-10"
       style={{ position: "absolute", top: "0px", left: "0px" }}
       onMouseDown={handleMouseDown}
     >

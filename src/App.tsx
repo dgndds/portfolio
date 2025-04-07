@@ -9,6 +9,7 @@ import { Routes, Route, HashRouter } from "react-router";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News";
+import OpSys from "./pages/OpSys";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
+          <Route path="/desktop" element={<OpSys />} />
         </Routes>
       </MainLayout>
     </HashRouter>

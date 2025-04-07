@@ -69,7 +69,10 @@ const RealTerminal = ({
             className
           )}
         >
-          <div className="h-9 px-2 bg-primary-border-dark flex items-center justify-between font-tech-mono font-bold text-[#efefef] text-[12px]">
+          <div
+            data-draggable="true"
+            className="h-9 px-2 bg-primary-border-dark flex items-center justify-between font-tech-mono font-bold text-[#efefef] text-[12px]"
+          >
             <div className="flex-1">{title}</div>
 
             <div className="flex gap-2">

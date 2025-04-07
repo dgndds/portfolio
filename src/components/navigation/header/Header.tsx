@@ -33,6 +33,7 @@ function Header() {
           <ListLink path="/" title="Home" />
           <ListLink path="/about" title="About" />
           <ListLink path="/news" title="News" />
+          <ListLink path="/desktop" title="Desktop" />
         </div>
       </Container>
     </AppBar>
