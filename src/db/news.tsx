@@ -88,6 +88,15 @@ const NEWS_ARTICLES = [
     type: "mdy",
     subtype: "news",
   },
+  {
+    id: 10,
+    title: "New Desktop Page Launched",
+    content:
+      "Explore the new Desktop Page, designed to imitate an OS desktop for a unique and interactive experience.",
+    date: "07/04/2025 MON",
+    type: "mdy",
+    subtype: "news",
+  },
 ];
 
 export { NEWS_ARTICLES };
