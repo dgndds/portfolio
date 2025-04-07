@@ -16,6 +16,10 @@ const OpSys = () => {
 
   const closeTerminal = (id: number) => {
     setTerminals(terminals.filter((terminal) => terminal.id !== id));
+
+    if(terminals.length >= 0){
+      terminalCounter.current = 1;
+    }
   };
 
   return (
