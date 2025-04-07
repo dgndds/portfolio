@@ -1,9 +1,10 @@
-import Container from "./Container"
+import Container from "./Container";
+import { twMerge } from "tailwind-merge";
 
-const AsciiArt = () => {
+const AsciiArt = ({ className }: { className?: string }) => {
 
     return (
-        <Container>
+        <Container className={twMerge(className)}>
             <span className="text-white text-center text-xs leading-tight" style={{ fontSize: '8px' }}>
                 ___====-_  _-====___<br />
                 _--^^^#####// \\#####^^^--_<br />
@@ -28,21 +29,6 @@ const AsciiArt = () => {
 };
 
 export default AsciiArt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

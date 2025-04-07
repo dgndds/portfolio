@@ -25,8 +25,8 @@ const OpSys = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-[calc(100vh-124px)] text-white -mt-4">
       <div className="w-full h-full relative">
-        <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-          <AsciiArt />
+        <div className="absolute inset-0 flex items-center justify-center  pointer-events-none">
+          <AsciiArt className="bg-[#1f1f1f] border-none opacity-20" />
         </div>
         {terminals.map((terminal) => (
           <DraggableDiv key={terminal.id}>
