@@ -23,7 +23,7 @@ const OpSys = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-[calc(100vh-140px)] text-white">
+    <div className="flex flex-col items-center justify-center w-full h-[calc(100vh-124px)] text-white -mt-4">
       <div className="w-full h-full relative">
         <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
           <AsciiArt />
