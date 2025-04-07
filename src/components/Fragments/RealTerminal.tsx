@@ -27,6 +27,7 @@ interface RealTerminalProps {
   closed?: boolean;
   onClose?: () => void;
   commands?: Command[];
+  resizable?: boolean; // Added resizable prop
 }
 
 //shadow-[0px_0px_5px_2.5px_rgba(16,137,99,0.75)]
@@ -37,6 +38,7 @@ const RealTerminal = ({
   closed = false,
   onClose,
   commands = [],
+  resizable = false, // Default value for resizable
 }: RealTerminalProps) => {
   const [terminalClosed, setTerminalClosed] = useState(closed);
   const [isDialogOpen, setDialogOpen] = useState(false);
@@ -65,7 +67,9 @@ const RealTerminal = ({
       {!terminalClosed ? (
         <div
           className={twMerge(
-            `bg-[#151515] border-2 border-primary-border h-full`,
+            `bg-[#151515] border-2 border-primary-border h-full ${
+              resizable ? "resize" : ""
+            } overflow-hidden`, // Conditionally include resize class
             className
           )}
         >

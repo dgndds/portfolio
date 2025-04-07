@@ -31,6 +31,7 @@ const OpSys = () => {
               className="w-[450px] h-[350px]"
               onClose={() => closeTerminal(terminal.id)}
               commands={commands}
+              resizable
             ></RealTerminal>
           </DraggableDiv>
         ))}
