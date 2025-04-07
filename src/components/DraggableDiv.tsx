@@ -24,6 +24,23 @@ const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
     e.preventDefault();
     pos.current.pos3 = e.clientX;
     pos.current.pos4 = e.clientY;
+
+    // Bring the dragged element to the front with a bounded zIndex
+    if (divRef.current && divRef.current.parentElement) {
+      const siblings = Array.from(divRef.current.parentElement.children);
+      const baseZIndex = 10;
+      const maxZIndex = baseZIndex + siblings.length - 1;
+
+      siblings.forEach((el) => {
+        const currentZIndex = parseInt(window.getComputedStyle(el).zIndex) || baseZIndex;
+        if (currentZIndex > baseZIndex) {
+          (el as HTMLElement).style.zIndex = (currentZIndex - 1).toString();
+        }
+      });
+
+      divRef.current.style.zIndex = maxZIndex.toString();
+    }
+
     document.onmouseup = closeDragElement;
     document.onmousemove = elementDrag;
   };
