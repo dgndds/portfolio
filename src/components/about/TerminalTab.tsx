@@ -5,7 +5,7 @@ const TerminalTab = () => {
   return (
     <div className="h-full">
       <RealTerminal
-        title={"Real"}
+        title={"Real.exe"}
         commands={commands}
       ></RealTerminal>
     </div>

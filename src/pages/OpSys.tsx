@@ -3,6 +3,7 @@ import DraggableDiv from "../components/DraggableDiv";
 import RealTerminal from "../components/Fragments/RealTerminal";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import { commands } from "../db/commands";
+import AsciiArt from "../components/Fragments/cards/AsciiArt";
 
 const OpSys = () => {
   const [terminals, setTerminals] = useState([{ id: 1, title: "Terminal 1" }]);
@@ -20,6 +21,9 @@ const OpSys = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-[calc(100vh-140px)] text-white">
       <div className="w-full h-full relative">
+        <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
+          <AsciiArt />
+        </div>
         {terminals.map((terminal) => (
           <DraggableDiv key={terminal.id}>
             <RealTerminal

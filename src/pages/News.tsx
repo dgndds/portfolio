@@ -18,7 +18,7 @@ const News: React.FC = () => {
   const articlesPerPage = 6;
   const totalPages = Math.ceil(NEWS_ARTICLES.length / articlesPerPage);
 
-  const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
 
