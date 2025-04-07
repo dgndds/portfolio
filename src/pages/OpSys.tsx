@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import DraggableDiv from "../components/DraggableDiv";
 import RealTerminal from "../components/Fragments/RealTerminal";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import { commands } from "../db/commands";
 
 const OpSys = () => {
   const [terminals, setTerminals] = useState([{ id: 1, title: "Terminal 1" }]);
@@ -25,6 +26,7 @@ const OpSys = () => {
               title={terminal.title}
               className="w-[450px] h-[350px]"
               onClose={() => closeTerminal(terminal.id)}
+              commands={commands}
             ></RealTerminal>
           </DraggableDiv>
         ))}
