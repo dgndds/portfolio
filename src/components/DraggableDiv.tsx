@@ -1,8 +1,10 @@
 import { useRef } from "react";
+import { twMerge } from "tailwind-merge";
 
-const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const DraggableDiv: React.FC<{
+  children: React.ReactNode;
+  className?: string;
+}> = ({ children, className }) => {
   const divRef = useRef<HTMLDivElement | null>(null);
   const pos = useRef({ pos1: 0, pos2: 0, pos3: 0, pos4: 0 });
 
@@ -32,7 +34,8 @@ const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
       const maxZIndex = baseZIndex + siblings.length - 1;
 
       siblings.forEach((el) => {
-        const currentZIndex = parseInt(window.getComputedStyle(el).zIndex) || baseZIndex;
+        const currentZIndex =
+          parseInt(window.getComputedStyle(el).zIndex) || baseZIndex;
         if (currentZIndex > baseZIndex) {
           (el as HTMLElement).style.zIndex = (currentZIndex - 1).toString();
         }
@@ -82,7 +85,7 @@ const DraggableDiv: React.FC<{ children: React.ReactNode }> = ({
   return (
     <div
       ref={divRef}
-      className="absolute z-10"
+      className={twMerge("absolute z-10", className)}
       style={{ position: "absolute", top: "0px", left: "0px" }}
       onMouseDown={handleMouseDown}
     >

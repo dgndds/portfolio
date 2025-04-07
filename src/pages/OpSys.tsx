@@ -17,22 +17,22 @@ const OpSys = () => {
   const closeTerminal = (id: number) => {
     setTerminals(terminals.filter((terminal) => terminal.id !== id));
 
-    if(terminals.length >= 0){
+    if (terminals.length >= 0) {
       terminalCounter.current = 1;
     }
   };
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-[calc(100vh-124px)] text-white -mt-4">
-      <div className="w-full h-full relative">
-        <div className="absolute inset-0 flex items-center justify-center  pointer-events-none">
+      <div className="h-full w-full relative">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <AsciiArt className="bg-[#1f1f1f] border-none opacity-20" />
         </div>
         {terminals.map((terminal) => (
           <DraggableDiv key={terminal.id}>
             <RealTerminal
               title={terminal.title}
-              className="w-[450px] h-[350px]"
+              className="w-[450px] h-[350px] max-w-[calc(100vw-5px)] max-h-[calc(100vh-124px)]"
               onClose={() => closeTerminal(terminal.id)}
               commands={commands}
               resizable
