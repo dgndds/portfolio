@@ -16,9 +16,9 @@ const News = () => {
         </Link>
       </div>
 
-      <div className="flex gap-2 flex-col pt-2">
+      <div className="flex gap-2 flex-col py-3">
         {NEWS_ARTICLES.map((article, index) => (
-          index <= 6 && <NewsEntry
+          index <= 5 && <NewsEntry
             key={index}
             date={article.date}
             type={article.type}
