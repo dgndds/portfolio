@@ -14,7 +14,7 @@ const Main = () => {
     <div className="flex flex-col gap-4 h-[calc(100vh-112px)] px-4 overflow-hidden">
       <div className="flex gap-2">
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl p-4">
-          #72
+          #73
         </div>
 
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono text-3xl p-4 flex-1 overflow-clip">

@@ -13,6 +13,6 @@ jobs:
     - name: Test GitHub Actions
       env:
         USER: ${{secrets.EC2_USER}}
-      run: 
+      run: |
         echo "Hello from GitHub Actions"
         echo $USER
