@@ -11,4 +11,8 @@ jobs:
     steps:
 
     - name: Test GitHub Actions
-      run: echo "Hello from GitHub Actions"
+      env:
+        USER: ${{secrets.EC2_USER}}
+      run: 
+        echo "Hello from GitHub Actions"
+        echo $USER
