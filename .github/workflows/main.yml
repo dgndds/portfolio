@@ -31,7 +31,7 @@ jobs:
           cat streaky.pem
           pwd
           ls -la
-          ssh StrictHostKeyChecking=no  -i "streaky.pem" ubuntu@ec2-13-60-167-242.eu-north-1.compute.amazonaws.com
+          ssh -o StrictHostKeyChecking=no  -i "streaky.pem" ubuntu@ec2-13-60-167-242.eu-north-1.compute.amazonaws.com
           echo 'SSH connection established.'
           echo "SSH connection established. ${pwd}"
 
