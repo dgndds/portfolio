@@ -28,6 +28,9 @@ jobs:
         run: |
           echo "${{ secrets.EC2_SSH_KEY }}" > streaky.pem
           chmod 400 streaky.pem
+          cat streaky.pem
+          pwd
+          ls -la
           ssh -i "streaky.pem" ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 
           echo 'SSH connection established.'
           echo "SSH connection established. ${pwd}"
