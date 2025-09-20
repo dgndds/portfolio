@@ -31,7 +31,7 @@ jobs:
           cat streaky.pem
 
           # clean old build directory on server
-          ssh -o StrictHostKeyChecking=no -i streaky.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo rm -rf ${{ secrets.EC2_PATH }}/"
+          ssh -o StrictHostKeyChecking=no -i streaky.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo rm -rf ${{ secrets.EC2_PATH }}"
 
           # copy new build folder
           #scp -o StrictHostKeyChecking=no -i streaky.pem -r dist ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:${{ secrets.EC2_PATH }}/
