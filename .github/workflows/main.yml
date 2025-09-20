@@ -28,6 +28,9 @@ jobs:
         run: |
           echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
           chmod 600 private_key.pem
+          ssh -i "streaky.pem" ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 
+          echo 'SSH connection established.'
+          echo "SSH connection established. ${pwd}"
 
           # clean old build directory on server
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo rm -rf ${{ secrets.EC2_PATH }}/"
