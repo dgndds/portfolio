@@ -97,6 +97,24 @@ const NEWS_ARTICLES = [
     type: "mdy",
     subtype: "news",
   },
+
+  {
+    id: 11,
+    title: "Migrated from GitHub Pages to New Domain",
+    content:
+      "We've moved our site from GitHub Pages to a new domain to enhance our performance and scalability.",
+    date: "22/09/2025 TUE",
+    type: "mdy",
+    subtype: "news",
+  },
+  {
+    id: 12,
+    title: "New GitHub Actions Deploy Pipeline",
+    content: "Discover the new GitHub Actions deploy pipeline that streamlines our CI/CD process and enhances deployment reliability.",
+    date: "22/09/2025 WED",
+    type: "mdy",
+    subtype: "news",
+  },
 ];
 
 export { NEWS_ARTICLES };
