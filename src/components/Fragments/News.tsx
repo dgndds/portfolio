@@ -16,7 +16,7 @@ const News = () => {
         </Link>
       </div>
 
-      <div className="flex gap-2 flex-col py-3">
+      <div className="flex gap-2 flex-col py-3 overflow-y-scroll">
         {NEWS_ARTICLES.map((article, index) => (
           index <= 5 && <NewsEntry
             key={index}

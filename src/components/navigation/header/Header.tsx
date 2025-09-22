@@ -8,7 +8,7 @@ import ListLink from "../Link";
 function Header() {
   return (
     <AppBar position="fixed" className="fixed top-0 !bg-black">
-      <Container maxWidth="xl" className="flex items-center gap-8">
+      <Container maxWidth="xl" className="flex items-center md:gap-8 flex-col sm:flex-row">
         <Toolbar disableGutters>
           <ChevronRight sx={{ mr: 1 }} />
           <Typography
@@ -24,6 +24,8 @@ function Header() {
               color: "inherit",
               textDecoration: "none",
             }}
+
+            className="!min-h-content"
           >
             MDY_
           </Typography>
