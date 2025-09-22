@@ -16,8 +16,8 @@ const NewsEntry = ({
   count,
 }: NewsEntryProps) => {
   return (
-    <div className="flex gap-2">
-      <span className="text-primary font-thin">{date}</span>
+    <div className="flex gap-2 whitespace-nowrap overflow-x-hidden">
+      <span className="text-primary font-thin ">{date}</span>
       <span className="text-property">{`[${type}]`}</span>
       <span className="text-primary">{`(${subtype})`}</span>
       <span className="text-token-dark">{title}</span>
