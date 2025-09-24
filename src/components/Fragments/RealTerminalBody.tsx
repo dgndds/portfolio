@@ -108,7 +108,7 @@ const RealTerminalBody = ({ commands }: RealTerminalBodyProps) => {
       <div className="flex flex-col justify-end h-full gap-4">
         <div className="overflow-y-auto max-h-[100%] scrollbar scrollbar-thumb-[#727272] scrollbar-track-[#181818] pr-4">
           <ul className="text-[#ffffffc2] font-tech-mono">
-            <pre className="text-[4px] mb-4">
+            <pre className="text-[4px] mb-4 text-gray-300/50">
               {`
 ==================================================================================================================================
 
