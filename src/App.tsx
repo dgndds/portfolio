@@ -5,7 +5,7 @@ import "@fontsource/roboto/700.css";
 
 import MainLayout from "./layouts/MainLayout";
 import Main from "./pages/Main";
-import { Routes, Route, HashRouter } from "react-router";
+import { Routes, Route, BrowserRouter } from "react-router";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News";
@@ -13,7 +13,7 @@ import OpSys from "./pages/OpSys";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <MainLayout>
         <Routes>
           <Route path="*" element={<NotFound />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/desktop" element={<OpSys />} />
         </Routes>
       </MainLayout>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
