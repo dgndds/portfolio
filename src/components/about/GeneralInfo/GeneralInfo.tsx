@@ -1,12 +1,13 @@
-import Terminal from "../Fragments/Terminal";
-import profile from "../../assets/images/profile.jpg";
-import GeneralAboutMeTerminalContent from "../Fragments/GeneralAboutMeTerminalContent";
-import ContactInfoTerminalContent from "../Fragments/ContanctInfoTerminalContent";
+import Terminal from "../../Fragments/Terminal";
+import profile from "../../../assets/images/profile.jpg";
+import GeneralAboutMeTerminalContent from "../../Fragments/GeneralAboutMeTerminalContent";
+import ContactInfoTerminalContent from "../../Fragments/ContanctInfoTerminalContent";
+import GeneralInfoMobile from "./GeneralInfoMobile";
 
 const GeneralInfo = () => {
   return (
     <>
-      <div className="h-[350px] flex gap-4">
+      <div className="h-[350px] md:flex gap-4 hidden">
         <div className=" text-white w-[260px]">
           <Terminal title={"pic.png"}>
             <img src={profile} className="object-cover h-[295px]" />
@@ -38,9 +39,11 @@ const GeneralInfo = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 hidden md:block">
         <Terminal title={""}></Terminal>
       </div>
+
+      <GeneralInfoMobile/>
     </>
   );
 };
