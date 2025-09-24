@@ -78,7 +78,7 @@ const OpSys = () => {
         </div>
       </div>
 
-      <div className="w-full h-[calc(100vh-124px)] flex justify-center items-center text-center flex-col gap-2">
+      <div className="w-full h-[calc(100vh-124px)] flex justify-center items-center text-center flex-col gap-2 md:hidden">
         <p className="text-white/70 text-sm"> Currently, Desktop feature is only available in Desktop Environments. </p>
         <a href="/" className="text-blue-300/80 underline underline-offset-4"> Go Back Home</a>
       </div>

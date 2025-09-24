@@ -28,7 +28,7 @@ const News: React.FC = () => {
   );
 
   return (
-    <div className="flex flex-col gap-4 px-4 mt-26 mb-5 md:m-0">
+    <div className="flex flex-col gap-4 px-4 mb-5 md:m-0">
       <h1 className="font-tech-mono text-white text-3xl">
         News <span className="text-class">{`(${NEWS_ARTICLES.length})`}</span>
       </h1>

@@ -4,7 +4,7 @@ const ExtraInfo = () => {
   return (
     <div className="h-full">
       <Terminal title={"Coming Soon"}>
-        <pre>
+        <pre className="text-[5px] md:text-[12px] lg:text-[16px]">
           {`
         a88888b.                    oo                      .d88888b                             
       d8'    88                                             88.    "'                            

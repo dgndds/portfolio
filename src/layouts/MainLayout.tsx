@@ -8,7 +8,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
       <Header />
-      <div className="mt-22">{children}</div>
+      <div className="mt-26 md:mt-22">{children}</div>
       {/* <Footer /> */}
     </div>
   );
