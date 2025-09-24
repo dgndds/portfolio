@@ -12,7 +12,7 @@ const Main = () => {
     <div className="flex flex-col gap-4 px-4 overflow-hidden mt-26 md:mt-0">
       <div className="flex gap-2">
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono md:text-3xl md:p-4 text-xl p-2">
-          #98
+          #99
         </div>
 
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono md:text-3xl p-4 flex-1 overflow-clip text-xl w-[100px]">
