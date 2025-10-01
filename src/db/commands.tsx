@@ -176,6 +176,12 @@ const commands = [
         </a>
       </div>
     ),
+    examples: [
+      {
+        usage: "npm-info",
+        description: "displays the npm repository of this terminal component",
+      },
+    ],
   },
 ];
 
