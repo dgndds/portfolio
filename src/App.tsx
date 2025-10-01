@@ -10,6 +10,8 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News";
 import OpSys from "./pages/OpSys";
+import BlogList from "./pages/Blog/BlogList";
+import BlogDetails from "./pages/Blog/BlogDetails";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
           <Route path="/desktop" element={<OpSys />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/123" element={<BlogDetails />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

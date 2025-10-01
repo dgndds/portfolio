@@ -4,7 +4,7 @@ import { NEWS_ARTICLES } from "../db/news";
 import Pagination from "@mui/material/Pagination";
 import { styled } from "@mui/material/styles";
 
-const StyledPagination = styled(Pagination)({
+export const StyledPagination = styled(Pagination)({
   "& .MuiPaginationItem-root": {
     color: "#ffffff",
   },
