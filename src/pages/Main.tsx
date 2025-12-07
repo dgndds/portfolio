@@ -12,7 +12,7 @@ const Main = () => {
     <div className="flex flex-col gap-4 px-4 overflow-hidden mt-26 md:mt-0">
       <div className="flex gap-2">
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono md:text-3xl md:p-4 text-xl p-2">
-          #107
+          #108
         </div>
 
         <div className="flex items-center justify-center bg-background-dark border border-primary-border-dark text-primary font-tech-mono md:text-3xl p-4 flex-1 overflow-clip text-xl w-[100px]">
@@ -83,8 +83,8 @@ const Main = () => {
       </div>
 
       <div className="flex gap-4 flex-col xs:flex-row">
-        <Terminal title="MDY.png" className="md:!w-[300px] h-[400px]">
-          <img src={profile} alt="" className="object-cover" />
+        <Terminal title="MDY.png">
+          <img src={profile} alt="" className="object-cover md:!w-[300px] h-[344px] p-2" />
         </Terminal>
 
         <Terminal
@@ -93,28 +93,18 @@ const Main = () => {
         >
           <p className="text-green-400 mb-3 ml-1">{"> cat about.txt"}</p>
           <p className="mb-5">
-            &emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            In bibendum volutpat ligula, interdum interdum eros malesuada id.
-            Praesent metus libero, fermentum porta interdum at, ullamcorper at
-            turpis. Donec sit amet est sit amet odio efficitur consectetur.
-            Donec lectus mi, accumsan in varius et, finibus vel nulla. Mauris
-            sodales, tellus ut vestibulum faucibus, tortor diam vestibulum elit,
-            auctor convallis diam erat et dui. Praesent lacus turpis, venenatis
-            quis massa at, porttitor vulputate metus. Aliquam a pharetra sapien.
-            Sed feugiat ex sapien, eu hendrerit orci finibus vitae. Aenean sed
-            mi elementum, efficitur eros vitae, consectetur quam.
+            &emsp;&emsp;I’m <span className="text-green-600 font-bold">Muhammed Doğancan Yılmazoğlu</span>, 
+            a <span className="text-property-dark font-bold">Frontend Developer</span> with a strong foundation 
+            in <span className="text-class-dark font-bold">computer engineering</span> and hands-on experience building modern, scalable web applications. After 
+            graduating from Bilkent University, I worked across multiple teams and industries, contributing 
+            to digital learning platforms, low-code solutions, internal corporate tools, and full-stack applications. 
+            I specialize in React, Next.js, Angular, and Vue, and I enjoy creating clean, responsive interfaces using 
+            tools like Tailwind CSS, Material UI, Shadcn/UI, and Radix UI. I’ve also gained experience 
+            in SSR, state management, testing, and API integrations, and I consistently follow clean 
+            architecture principles to deliver maintainable, high-quality code.
           </p>
           <p>
-            &emsp;&emsp;Maecenas quis lectus a sapien fermentum dictum. Ut
-            semper, neque ut tempor consequat, risus quam aliquam metus, ut
-            sodales ex magna vel felis. Nulla pharetra arcu velit, et feugiat
-            nulla elementum malesuada. Vestibulum maximus lectus lorem, a rutrum
-            ipsum ultricies in. In gravida, erat sit amet sollicitudin auctor,
-            odio tellus tristique eros, ut facilisis magna sem ut purus. Cras
-            posuere orci consectetur justo consequat finibus. Vivamus pretium
-            finibus libero, non vestibulum lorem blandit eleifend. Nullam
-            feugiat neque quis libero pharetra euismod. Fusce in sem quis quam
-            facilisis gravida.
+            &emsp;&emsp;Throughout my career, I’ve built and contributed to diverse projects—from full-stack Next.js applications and habit-tracking platforms to desktop applications with Electron and Java Spring Boot backends. I’m passionate about crafting smooth user experiences, solving complex problems, and continuously improving my skills. Outside of work, I enjoy exploring new technologies that push my creativity and technical boundaries. I aim to build meaningful products that combine thoughtful design with strong engineering.
           </p>
         </Terminal>
       </div>

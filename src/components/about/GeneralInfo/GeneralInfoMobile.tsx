@@ -1,13 +1,13 @@
 import ContactInfoTerminalContent from "../../Fragments/ContanctInfoTerminalContent";
 import GeneralAboutMeTerminalContent from "../../Fragments/GeneralAboutMeTerminalContent";
 import Terminal from "../../Fragments/Terminal";
-import profile from "../../../assets/images/profile.jpg";
+import placeholder from "../../../assets/images/placeholder.jpg";
 
 const GeneralInfoMobile = () => {
   return (
     <div className="md:hidden flex flex-col gap-4">
       <Terminal title={"pic.png"}>
-        <img src={profile} className="object-cover h-[295px]" />
+        <img src={placeholder} className="object-cover h-[295px]" />
       </Terminal>
       <Terminal title={"about_me.exe"}>
         <GeneralAboutMeTerminalContent />

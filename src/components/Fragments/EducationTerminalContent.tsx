@@ -23,7 +23,7 @@ const EducationTerminalContent = ({
       <p className="pl-4 text-gray-300">
         Bachelor of <span className="text-class-dark">Computer Science</span>{" "}
         from
-        <span className="text-token-dark"> XYZ University (2015 - 2019)</span>.
+        <span className="text-token-dark"> Bilkent University (2018 - 2022)</span>.
         Focused on algorithms, data structures, and software development.
       </p>
     </>

@@ -10,7 +10,7 @@ const GeneralInfo = () => {
       <div className="h-[350px] md:flex gap-4 hidden">
         <div className=" text-white w-[260px]">
           <Terminal title={"pic.png"}>
-            <img src={profile} className="object-cover h-[295px]" />
+            <img src={profile} className="object-cover h-[292px]" />
           </Terminal>
         </div>
         <div className="flex flex-col gap-4 flex-1">

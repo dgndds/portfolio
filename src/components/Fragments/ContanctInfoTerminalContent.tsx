@@ -1,5 +1,5 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { LinkedIn, Twitter } from "@mui/icons-material";
+import { Book, LinkedIn, Twitter } from "@mui/icons-material";
 
 type ContactInfoTerminalContentProps = {
   headlessMode?: boolean;
@@ -20,34 +20,34 @@ const ContactInfoTerminalContent = ({
           <span className="flex flex-col md:flex-row gap-4 items-center">
             <GitHubIcon />
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/dgndds"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4"
             >
-              github.com/yourusername
+              github.com/dgndds
             </a>
           </span>
           <span className="flex flex-col md:flex-row gap-4 items-center">
             <LinkedIn />
             <a
-              href="https://linkedin.com/yourusername"
+              href="https://www.linkedin.com/in/muhammed-do%C4%9Fancan-y%C4%B1lmazo%C4%9Flu/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4"
             >
-              linkedin.com/yourusername
+              muhammed-dogancan-yilmazoglu
             </a>
           </span>
           <span className="flex flex-col md:flex-row gap-4 items-center">
-            <Twitter />
+            <Book />
             <a
-              href="https://x.com/yourusername"
+              href="https://medium.com/@dogancan1998231"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4"
             >
-              x.com/yourusername
+              medium.com/@dogancan1998231
             </a>
           </span>
         </div>

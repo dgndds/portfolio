@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import img from "../../../assets/images/profile.jpg";
+import placeholder from "../../../assets/images/placeholder.jpg";
 
 const BlogPreviewContainer = () => {
   return (
     <Link to="/blog/123" className="text-white gap-2 md:gap-4 grow-0 p-2 md:p-4 bg-[#151515] h-[350px] md:h-[250px] flex flex-col md:flex-row border border-primary-border hover:cursor-pointer">
       <img
-        src={img}
+        src={placeholder}
         alt=""
         className="h-[45%] w-full md:h-full md:w-1/3 border border-primary-border-dark object-cover"
       />
