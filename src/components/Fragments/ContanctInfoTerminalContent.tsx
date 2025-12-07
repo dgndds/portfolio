@@ -1,5 +1,5 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Book, LinkedIn, Twitter } from "@mui/icons-material";
+import { Book, LinkedIn } from "@mui/icons-material";
 
 type ContactInfoTerminalContentProps = {
   headlessMode?: boolean;
